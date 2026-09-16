@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .rainbow-container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+  }
+  
+  .stripe {
+    flex: 1;
+    padding: 10px;
+    background-color: #444; /* Base background color */
+    color: white;
+    border-right: 1px solid #222; /* Base border color */
+} 
+
+.command-box {
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+}
+
+.box-header {
+    background-color: rgba(0, 0, 0, 0.2); /* Lighter transparent black */
+    padding: 8px;
+    cursor: pointer;
+}
+
+.box-content {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker transparent black */
+    padding: 8px;
+}
+  
+  .input-group,
+  .radio-group {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

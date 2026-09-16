@@ -1,0 +1,1760 @@
+{
+
+
+
+
+
+"file search": {
+
+    "find using regex": {
+        "plaintext": "where is the text to be searched?",
+        "radiobutton1": "in the file name",
+        "radiobutton2": "entire path+name",
+        "radiobutton3": "in the file content",
+        "inputbox1": "search this text",
+      "ok_button": "clipboard_search_filesystem",
+      "plaintext1": "________what________",
+      "plaintext2": ". (any character)",
+      "plaintext3": "[abc] (a, b or c)",
+      "plaintext4": "[a-zA-Z] (letters)",
+      "plaintext5": "[a-zA-Z0-9] (letters and numbers)",
+      "plaintext51": "[ ] (space)",
+      "plaintext52": "[^ ] (not space)",
+      "plaintext6": "____________________",
+      "plaintext7": "^ (start of line)",
+      "plaintext8": "$ (end of line)",
+      "plaintext9": "______quantity______",
+      "plaintext11": "* (0-infinite)",
+      "plaintext12": "+ (1-infinite)",
+      "plaintext13": "{n} (exactly n)",
+      "plaintext14": "{n,m} (between n and m)",
+      "plaintext15": "{n,} (n-infinite)"
+    }
+
+},
+
+"compression": {
+
+
+
+    "extraction": {
+      "inputbox1": "input file name. ex: foo.tar.gz",
+      "plaintext1": "select the extraction algorithm. you can discover the right one looking at the extension:",
+      "plaintext2": "___folders___",
+      "radiobutton0": ".tar",
+      "radiobutton1": ".tar.gz",
+      "radiobutton2": ".tar.bz2",
+      "radiobutton3": ".tar.xz",
+      "plaintext3": "___files___",
+      "radiobutton4": ".gz",
+      "radiobutton5": ".bz2",
+      "radiobutton6": ".xz",
+      
+      "ok_button": "clipboard_extraction"
+
+    },
+
+    "compression": {
+      "inputbox1": "input file or folder name. ex: foo",
+      "plaintext1": "select the compresion algorithm. the proper extension will be created:",
+      "plaintext2": "___folders___",
+      "radiobutton0": ".tar",
+      "radiobutton1": ".tar.gz",
+      "radiobutton2": ".tar.bz2",
+      "radiobutton3": ".tar.xz",
+      "plaintext3": "___files___",
+      "radiobutton4": ".gz",
+      "radiobutton5": ".bz2",
+      "radiobutton6": ".xz",
+      
+      "ok_button": "clipboard_compression"
+
+    }
+
+},
+
+
+"word search (bash)": {
+
+    "list (grep)": {
+      "plaintext1": "grep 'foo'",
+      "inputbox1": "word to be found. ex: henrique",
+      "inputbox2": "file to be searched. ex: file.txt",
+      "ok_button": "clipboard_find"
+
+
+    },
+
+    "replace (sed s///g)": {
+      "plaintext1": "sed 's/foo/bar/g'",
+      "inputbox1": "old value",
+      "inputbox2": "new value",
+      "inputbox3": "file to be modified. ex: file.txt",
+      "inputbox4": "new file name. ex: newfile.txt",
+
+      "ok_button": "clipboard_replace"
+
+    }
+
+
+
+},
+
+"word search (vim)": {
+
+    "highlight (/)": {
+      "plaintext0": "/foo",
+      "inputbox1": "word to be found. ex: henrique",
+      "ok_button": "clipboard_find_vim",
+      "plaintext1": "after pasting, hit 'enter'. then 'n' to see next"
+
+
+    },
+
+    "replace (:%s///g)": {
+
+      "plaintext0": ":%s/foo/bar/g",
+      "inputbox1": "old value",
+      "inputbox2": "new value",
+
+      "ok_button": "clipboard_replace_vim",
+      "plaintext1": "after pasting, hit 'enter'",
+      "plaintext2": "OBS: for confirmation, add 'c'. ex: :%s/foo/bar/gc"
+      
+
+
+    }
+
+},
+
+
+
+"HPC": {
+    "paste minimal scheduler file": {
+        "radiobutton1": "rome",
+        "radiobutton2": "slurm",
+      "ok_button": "clipboard_minimal_scheduler_file"
+    },
+
+    "send": {
+        "radiobutton1": "rome",
+        "radiobutton2": "adastra",
+      "ok_button": "clipboard_hpc_send"
+    },
+
+    "bring": {
+        "radiobutton1": "rome",
+        "radiobutton2": "adastra",
+      "ok_button": "clipboard_hpc_bring"
+    },
+    "see my jobs": {
+        "radiobutton1": "rome",
+        "radiobutton2": "slurm",
+      "ok_button": "clipboard_hpc_see"
+    },
+    "kill my jobs": {
+      "ok_button": "clipboard_hpc_kill"
+    },
+    "assess busyness": {
+      "plaintext1": "this command is for rome",
+      "ok_button": "clipboard_assess_busyness"
+    },
+
+
+    "hours in project": {
+        "radiobutton1": "rome",
+        "radiobutton2": "adastra",
+      "ok_button": "clipboard_hpc_hours"
+    },
+    "list nodes (with specs)": {
+      "ok_button": "clipboard_custer_overview"
+    }
+},
+
+
+
+"vmd tools": {
+
+    "LAUNCH VMD WITH SOCKET": {
+      "ok_button": "call_open_vmd_with_socket"
+    },
+
+    "inspect file, generating textual infos": {
+      "ok_button": "send_tcl_to_VMD_inspect_file"
+    },
+
+    "highlight what I want": {
+      "inputbox1": "resname. ex: PRO CYS POPE",
+      "inputbox2": "name. ex: CA",
+      "inputbox3": "element. ex: S",
+      "inputbox4": "index. ex: 1 2 3",
+      "ok_button": "send_tcl_to_VMD_selection_highlight",
+      "plaintext1": "the things that you chose will be red. everything else will be grey. dont use quotes. If you put several things in a inputbox, it shoud be space separated. "
+    },
+
+    "align frames": {
+      "plaintext1": "first you have to click in the atoms that will be the reference of the alignment",
+      "ok_button": "call_align_using_selected_atoms"
+    },
+
+
+
+    "load multiple molecules as frames": {
+      "inputbox1": "full path with spetial characters. ex: /data2/henrique/qm/proxy_initial_dihedral_scan/all_gros/proxy_initial_dih%03d.gro",
+      "ok_button": "call_load_files_into_vmd_frames"
+    },
+
+    "create gif": {
+      "inputbox1": "out folder. ex: /home/hrigitano/Desktop/vmd_gif",
+      "inputbox2": "duration per frame (ns). ex: 40",
+      "ok_button": "call_create_gif_from_vmd_frames"
+    }
+
+
+
+
+},
+
+"vmd representations": {
+
+
+    "Cartoon with licorice": {
+      "ok_button": "send_tcl_to_VMD_default_cartoon_and_licorice",
+      "plaintext1": "(water is not shown)"
+    },
+    "Goodsell": {
+      "ok_button": "send_tcl_to_VMD_goodsell_blob",
+      "plaintext1": "(water is not shown)"
+    },
+    "Chewing gum": {
+      "ok_button": "send_tcl_to_VMD_chewing_gum",
+      "plaintext1": "(water is not shown)"
+    },
+    "Secondary Structure": {
+      "ok_button": "send_tcl_to_VMD_secondary_structure",
+      "plaintext1": "(water is not shown)"
+    },
+    "Hydrophilic x Hydrophobic": {
+      "ok_button": "send_tcl_to_VMD_fobic_are_yellow_and_philic_are_purple",
+      "plaintext1": "(water is not shown)"
+    },
+    "H bonds in neighborhood": {
+      "ok_button": "send_tcl_to_VMD_hbond_between_proteins_and_solvent",
+      "plaintext1": "(water is not shown)"
+    },
+    "cube - Eletrostatic potential": {
+      "plaintext1": "cube files from qm calculations are required. a new molecule will be loaded",
+      "inputbox1": "cube file with density. ex: /data2/henrique/qm/dihedral_scan/ang000_homo39_Dt.cube",
+      "inputbox2": "cube file with ESP. ex: /data2/henrique/qm/dihedral_scan/ang000_homo39_ESP.cube",
+      "ok_button": "send_tcl_to_VMD_eletrostatic_surface"
+
+    },
+    "cube - Orbital": {
+      "plaintext1": "First you must load a molecule in VMD using a CUBE file that contain psi. ex: ang000_homo39_Psi_a_39_39-A.cube",
+      "ok_button": "send_tcl_to_VMD_orbital"
+    },
+
+    "[directive reader] Connections from ITP or TOP": {
+      "inputbox1": ".top file where the connections are (without quotes). ex: /data1/alaHW.top",
+      "inputbox2": ".gro file where the edges coordinates are (without quotes). ex: /data1/alaHW.gro",
+      "inputbox3": "molecule to be shown (without quotes). ex: Protein_chain_A",
+      "ok_button": "call_see_interactions"
+    },
+
+    "[directive reader] Partial charges from ITP or TOP": {
+      "inputbox1": ".top file where the partial charges are (without quotes). ex: /data2/henrique/qm/CHYO_lipid.itp",
+      "inputbox2": ".gro file where the coordinates are (without quotes). ex: /data2/henrique/qm/CHYO.gro",
+      "ok_button": "call_see_partial_charges",
+      "plaintext1": "ATENTION: unlike other visualisations. this will create a pdb and load it as a new molecule"
+    },
+    "Forces from TRR <NOT>": {
+      "ok_button": "xxxxx"
+    }
+
+
+
+
+
+
+
+
+},
+
+
+
+"vmd representations MARTINI": {
+
+   "cg_bonds-v6 (see conections) ": {
+      "inputbox1": ".top file where the connections are (full path without quotes). ex: /data1/alaHW.top",
+      "ok_button": "send_tcl_to_VMD_MARTINI_cg_bonds",
+      "plaintext1": "(the connections will magicaly appear. and never disapear!!!)"
+    },
+
+   "cg_bonds-v6 (delete)": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_cg_bonds_delete",
+      "plaintext1": "(this doesnt work!!!)"
+    },
+
+
+  "henrique": {
+
+      "ok_button": "send_tcl_to_VMD_MARTINI_henrique",
+      "plaintext3": "by name:",
+      "plaintext0": "C and D =yellow, NC3=bluish, PO4=redish, GL=iceblue, CHOL=orange", 
+      "plaintext1": "water are blue dots"
+    },
+
+ 
+   "jackson": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_jackson",
+      "plaintext3": "by name:",
+      "plaintext0": "C and D =green3, NC3=black, PO4=green2, GL=iceblue, CHOL=orange", 
+      "plaintext1": "(water is not shown)"
+    },
+
+   "brasnett": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_brasnett",
+      "plaintext3": "by name:",
+      "plaintext0": "C and D =green3, NC3 and PO4=bluish, GL=yellow, CHOL=orange", 
+      "plaintext1": "(water are bubbles)"
+    },
+
+   "technical": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_technical",
+      "plaintext3": "by name:",
+      "plaintext1": "C and D =yellow, NC3=blue, PO4=red, GL=iceblue, CHOL=violet", 
+      "plaintext2": "(water are bubbles)"
+    },
+
+   "14 common membrane lipids": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_bylipidtype",
+      "plaintext0": "by resname:",
+      "plaintext1": "CHOL=purple, POPC=blue, SSM=green, POPE=ochre, DOPS=red, etc...",
+      "plaintext2": "outside lipids (PC SM) are cold, inside (PE, PS, PI) are warm. Among those, death callers (PS) are red, signaling (PI) are orange",
+      "plaintext3": "(water is not shown)"
+    },
+
+  "red or blue": {
+      "inputbox1": "resname to be red. ex: CHOL",
+      "ok_button": "send_tcl_to_VMD_MARTINI_bylipid_blue_red",
+      "plaintext3": "by resname: selected is red",
+      "plaintext2": "(water is not shown)"
+    },
+
+   "big head x small head": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_bylipid_bighead_smallhead",
+      "plaintext3": "by resname suffix:",
+      "plaintext1": "big=purple, small=pink",
+      "plaintext2": "(water is not shown)"
+    },
+
+  "saturated x unsaturated": {
+      "ok_button": "send_tcl_to_VMD_MARTINI_bylipid_solid_liquid",
+      "plaintext3": "by resname prefix:",
+      "plaintext1": "saturated=brown, unsaturated=yellow",
+      "plaintext2": "(water is not shown)"
+    }
+
+
+
+
+
+},
+
+"plain gromacs": {
+
+
+  "pdb2gmx": {
+
+    "ok_button": "clipboard_pdb2gmx"
+
+  },
+
+
+  "editconf": {
+
+    "ok_button": "clipboard_editconf"
+
+  },
+
+
+  "solvate": {
+    "radiobutton1": "water",
+    "radiobutton2": "custom box",
+
+    "ok_button": "clipboard_solvate"
+
+  },
+
+
+  "grompp": {
+
+    "ok_button": "clipboard_grompp"
+
+  },
+
+
+  "mdrun": {
+    "radiobutton1": "normal",
+    "radiobutton2": "continue",
+    "radiobutton3": "extend",
+
+    "ok_button": "clipboard_mdrun"
+
+  },
+
+
+    "trjconv": {
+    "radiobutton1": "generate last_step.gro",
+    "radiobutton2": "center",
+    "radiobutton3": "fit",
+
+
+
+    "ok_button": "clipboard_trjconv"
+
+  },
+
+
+
+
+
+  "energy": {
+    "radiobutton1": "(menu)",
+    "radiobutton2": "Density",
+    "radiobutton3": "Temperature",
+    "radiobutton4": "Pressure",
+    "radiobutton5": "Potential",
+    "radiobutton6": "#Surf*SurfTen",
+    "ok_button": "clipboard_energy"
+
+  }
+
+
+
+
+
+},
+
+
+
+
+
+
+
+
+"construct molecules as pdb": {
+
+    "download and clean pdb": {
+      "inputbox1": "molecule name on pdb. ex: '1aki'",
+      "ok_button": "clipboard_download_and_clean_pdb"
+    },
+    "create peptide as pdb": {
+      "inputbox1": "list of aminoacids. ex: 'AAAAAA'",
+      "inputbox2": "list of phi. ex: [-57.8,-57.8,-57.8,-57.8,-57.8,-57.8] or [-120,-120,-120,-120,-120,-120]",
+      "inputbox3": "list of psi. ex: [-47.0,-47.0,-47.0,-47.0,-47.0,-47.0] or [120,120,120,120,120,120]",
+      "inputbox4": "N cap. ex: 'ACE' or ''",
+      "inputbox5": "C cap. ex: 'NME' or ''",
+      "inputbox6": "out file name. ex: 'peptide.pdb'",
+      "ok_button": "clipboard_create_peptide"
+    },
+
+
+    "insert residue in chain": {
+        "inputbox1": "input pdb. ex: 'protein.pdb'",
+        "inputbox2": "variable containing a list of dicts representing the molecule. see the doctring for more info. ex: ld_residue",
+        "inputbox3": "chain id. ex: 'A'",
+        "inputbox4": "residue number. ex: 3",
+        "inputbox5": "residue name. ex: 'BOB'",
+        "inputbox6": "how to insert. ex: 'displace' or 'replace'",
+        "inputbox7": "output file name. ex: 'modified_protein.pdb'",
+        "ok_button": "clipboard_insert_residue_into_chain"
+    },
+
+    "insert atom in residue": {
+        "inputbox1": "input pdb. ex: 'protein.pdb'",
+        "inputbox2": "chain id. ex: 'A'",
+        "inputbox3": "residue number. ex: 3",
+        "inputbox4": "atom name (structural). ex: 'CA'",
+        "inputbox5": "atom name (periodic table). ex: 'AU'",
+        "inputbox6": "atom coordinates. ex: [1,1,1]",
+        "inputbox7": "output file name. ex: 'modified_protein.pdb'",
+        "ok_button": "clipboard_insert_atom_into_residue"
+    },
+
+    "add another molecule to pdb": {
+        "inputbox1": "input pdb. ex: 'protein.pdb'",
+        "inputbox2": "variable containing a list of dicts representing the molecule. see the doctring for more info. ex: ld_new_molecule_atoms",
+        "inputbox3": "output file name. ex: 'modified_protein.pdb'",
+        "ok_button": "clipboard_insert_new_molecule_into_pdb"
+    },
+
+    "add a truss to pdb": {
+        "inputbox1": "input pdb. ex: 'protein.pdb'",
+        "inputbox2": "tip coordinates. ex: [0,0,0]",
+        "inputbox3": "other tip coordinates. ex: [10,10,10]",
+        "inputbox4": "square size. ex: 3",
+        "inputbox5": "output file name. ex: 'protein_with_truss.pdb'",
+        "ok_button": "clipboard_add_truss"
+    },
+
+    "add a plane to pdb <NOT>": {
+        "ok_button": "xxxxx"
+    }
+
+},
+
+"construct system": {
+
+      "paste minimal top": {
+        "inputbox1": "ff inclusion. ex: /home/hrigitano/repos/cleanpipe/cleanpipe/USEFUL_FORCEFIELDS/charmm36-jul2022.ff/forcefield.itp",
+        "inputbox2": "molecule itp inclusion. ex: mymolecule.itp",
+        "inputbox3": "molecule name,as in itp, to go on quantities. ex: mymolecule",
+
+      "ok_button": "clipboard_minimaltop"
+    },
+
+    "molecule in solvent box": {
+        "inputbox1": "file with molecule that will fill the box. ex: 'peptide.pdb' or ['peptide.gro', 'peptide.itp']",
+        "inputbox2": "out system's name. ex: 'peptide_in_water'",
+        "inputbox3": "solvent (standard water name, or system ofbox full of solvent). ex: 'tip3p' or 'box_full_of_octn'",
+        "inputbox4": "forcefield. ex: 'charmm36-jul2022' or 'martini3001'",
+        "inputbox5": "box size. ex: '3 3 3'",
+        "inputbox6": "maxsol. ex: '6943' (or '0' if you dont need this)",
+        "inputbox8": "extra parameters to martinize2/pdb2gmx. ex: '-ss HHHHHHHHHHHH' or ''",
+      "ok_button": "clipboard_molecule2molecule_in_solvent"
+    },
+
+    "molecule in 2 solvent boxes (water and oil)": {
+      "plaintext1": " this is usefull to calculate FEPtransfer",
+        "inputbox1": "file with molecule that will be in both solvents. ex: 'peptide.pdb' or ['peptide.gro','peptide.itp']",
+        "inputbox0": "oil option. ex'octane' or 'wet_octanol' (just for charmm36)",
+        "inputbox2": "out system's name. ex: 'peptide-transfer'",
+        "inputbox4": "forcefield. ex: 'charmm36-jul2022' or 'martini3001'",
+        "inputbox5": "box size. ex: '6 6 6'",
+        "inputbox6": "water maxsol. ex: '6943'",
+        "inputbox7": "octane maxsol. ex: '712'",
+        "inputbox8": "extra parameters to martinize2/pdb2gmx, might needed if the molecule is a pdb. ex: '-ss HHHHHHHHHHHH' or ''",
+      "ok_button": "clipboard_molecule2molecule_in_water_and_oil"
+    },             
+
+
+    "molecule in membrane <NOT>": {
+      "ok_button": "xxxxx"
+    },
+
+    "box filled with the same molecule": {
+        "inputbox1": "file with molecule that will fill the box. ex: 'octn.pdb'",
+        "inputbox2": "forcefield. ex: 'charmm36-jul2022'",
+        "inputbox3": "box size. ex: '5 5 5'",
+        "inputbox4": "max number of particles. ex: 1000",
+
+
+        "ok_button": "clipboard_pdb2box_full_of_that"
+    },
+
+    "tube of lipids <NOT>": {
+        "ok_button": "xxxxx"
+    },
+
+    "sphere of lipids <NOT>": {
+        "ok_button": "xxxxx"
+    },
+
+    "plane of lipids <NOT>": {
+        "ok_button": "xxxxx"
+    }
+
+
+},
+
+"restrict system": {
+    "positions <NOT>": {
+        "droplist": [
+                     "[position_restraints] type 1 (harmonic potential)",
+                     "[position_restraints] type 2 (flat bottom potential)"
+                    ],
+        "ok_button": "xxxxx"
+      },
+
+    "dihedrals": {
+      "droplist": [
+                   "[ dihedrals ] type 2 (improper dihedral harmonic)",
+                   "[ dihedrals ] type 4 (improper dihedral periodic)<NOT>",
+                   "[ dihedral_restraints ] type 1 (a potential similar to improper dihedral)<NOT>"
+                  ],
+
+
+      "plaintext2": "action required on mdp just for [ dihedral_restraints ]: dihre=yes dihre_fc=1000 (xxx )",
+
+      "inputbox1": "gro file where real diherals are. ex: 'protein_in_water.gro'",
+      "inputbox2": "top file to understand how many molecules there are. ex: 'protein_in_water.top'",
+
+      "inputbox3": "restraining force. ex: 5000",
+
+      "inputbox4": "name of molecule be be restricted. ex: 'Protein_chain_A'",
+
+      "inputbox5": "itp containing the [ dihedral_restraints ] to be edited. ex: 'Protein_chain_A.itp'",
+      "inputbox6": "output name. ex: 'Protein_chain_A_restricted.itp'",
+
+      "radiobutton1": "all<NOT>",
+      "radiobutton2": "just phi and psi of protein",
+      "ok_button": "clipboard_freeze_dihedrals",
+      "plaintext1": "a new file will be created with the new content, the original file will not be modified"
+    },
+    "angles <NOT>": {
+        "droplist": ["[ angle_restraints ] type 1 (a potential similar to proper dihedral)"],
+        "ok_button": "xxxxx"
+      },
+    "distances <NOT>": {
+
+        "radiobutton1": "option 1: using potentials",
+        "droplist1": ["[bonds] type 6 (harmonic potential)",
+                      "[bonds] type 10 (flat bottom potential)"],
+        "plaintext1": "action required on mdp: disre=simple disre_fc=1000", 
+
+        "radiobutton2": "option 2: making unmovable by algorithic renforcement",
+        "droplist2": ["[constraints] type 1 (will apply exclusions)",
+                      "[constraints] type 2 (wont apply exclusions)"],
+        "plaintext2": "action required on mdp: constraint_algorithm=lincs",
+                     
+        "ok_button": "xxxxx"
+      }
+  
+
+},
+
+"inspect directives": {
+    "get atom id (using characteristics)": {
+        "inputbox1": "top file. ex: 'molecule_in_water.top'",
+        "inputbox2": "molecule name. ex: 'Protein_chain_A'",
+        "inputbox3": "molecule instantiation. ex: 1",
+        "inputbox4": "residue number. ex: 4",
+        "inputbox5": "atom name. ex: 'CA'",
+
+        "ok_button": "clipboard_get_atom_global_id",
+        "plaintext1": "the output is the GLOBAL id as a integer. example: 315"
+    },
+    "get atom characteristics (using id) <NOT IMPLEMENTED. JUST MOL NAME>": {
+        "inputbox1": "top file. ex: molecule_in_water.top",
+
+        "inputbox2": "atom GLOBAL id",
+
+        "ok_button": "clipboard_get_atom_infos_from_global_id",
+        "plaintext1": "output example: {'mol_name':'Protein_chain_A','instantiation':1,'residue':4,'name':'CA'}}"
+},
+    "get basic infos of all molecules": {
+       "inputbox1": "top file. ex: 'molecule_in_water.top'",
+        "ok_button": "clipboard_basic_infos_of_molecules",
+        "plaintext1": "output example: {'Protein_chain_A': {'count': 1, 'qt_atoms': 81, 'first_id': 1}, 'Support_chain_B': {'count': 1, 'qt_atoms': 24, 'first_id': 82}, 'SOL': {'count': 845, 'qt_atoms': 3, 'first_id': 106}}"
+    },
+
+    "get a molecule name": {
+       "inputbox1": "top file. ex: 'molecule_in_water.top'",
+       "inputbox2": "order of molecule, starting at 1. ex: 1",
+        "ok_button": "clipboard_getMoleculeName",
+        "plaintext1": "output example: 'Protein_chain_A'"
+    },
+    "get the system name": {
+       "inputbox1": "top file. ex: 'molecule_in_water.top'",
+        "ok_button": "clipboard_getSystemName",
+        "plaintext1": "output example: 'octane in water'"
+    },
+
+
+    "parse a directive": {
+        "inputbox1": "top/itp file. ex: 'molecule_in_water.top'",
+        "inputbox2": "directive name. ex: '[ bonds ]'",
+        "ok_button": "clipboard_parse_directive",
+        "plaintext1": "output example: [['1', '2', '1'], ['1', '4', '1'], ..."
+    },
+    "parse all directives in all molecules": {
+        "inputbox1": "top/itp file. ex: 'molecule_in_water.top'",
+        "ok_button": "clipboard_parse_directives_inside_each_and_every_molecule",
+        "plaintext1": "output example: {'Protein_chain_A': {'[ atoms ]': [[]]} ..."
+    },
+    "parse all directives in intermolecular interactions": {
+        "inputbox1": "top/itp file. ex: 'molecule_in_water.top'",
+        "ok_button": "clipboard_parse_directives_inside_intermolecular_interactions",
+        "plaintext1": "output example: {'intermolecular_interactions': {'[ atoms ]': [[]]} ..."
+    }
+
+},
+
+"edit directives": {
+
+
+  "insert text before directive": {
+        "inputbox1": "top/itp file. ex: 'protein_in_water.top'",
+        "inputbox2": "text to insert. ex: ';this is a comment'",
+        "inputbox3": "directive name. ex: '[ atoms ]'",
+        "ok_button": "clipboard_insert_text_before_directive",
+        "plaintext1": "the file will be modified in place"
+  },
+
+
+  "replace entire directive content": {
+        "inputbox1": "top/itp file with the directive to be replaced. ex: 'protein_in_water.top'",
+        "inputbox3": "target directive. ex: '[ atoms ]'",
+        "inputbox4": "list of lists with the new content. ex: variable ll_lines containing [['1', '2', '1'], ['1', '4', '1'], ...]",
+        "inputbox5": "if there are several. specify which. ex: 'first' or 'last'",
+        "inputbox2": "name of the output file. ex: 'protein_in_water_out.top'",
+        "ok_button": "clipboard_replace_all_lines_of_directive",
+        "plaintext1": "a new file will be created with the new content, the original file will not be modified"
+  },
+
+
+  "insert text inside a directive, after last line": {
+        "inputbox1": "top/itp file with the directive to be complemented. ex: 'protein_in_water.top'",
+        "inputbox3": "target directive. ex: '[ atoms ]'",
+        "inputbox4": "list of lists with content to be added. ex: variable ll_lines containing [['1', '2', '1'], ['1', '4', '1'], ...]",
+        "inputbox5": "if there are several. specify which. ex: 'first' or 'last'",
+        "inputbox2": "name of the output file. ex: 'protein_in_water_out.top'",
+        "ok_button": "clipboard_add_lines_at_the_end_of_directive",
+        "plaintext1": "a new file will be created with the new content, the original file will not be modified"
+  },
+
+
+
+  "replace parameters of a directive, for specific atoms": {
+        "inputbox1": "top/itp file with the directive to be edited. ex: 'protein_in_water.top'",
+        "inputbox3": "target directive. ex: '[ atoms ]'",
+        "inputbox4": "list of lists with content to be edited. the ones not found will be added. ex: variable ll_lines containing [['1', '2', '1'], ['1', '4', '1'], ...]",
+        "inputbox2": "name of the output file. ex: 'protein_in_water_out.top'",
+        "ok_button": "clipboard_put_lines_at_the_proper_place_of_directive",
+        "plaintext1": "a new file will be created with the new content, the original file will not be modified"
+        
+  },
+
+
+  "change name of a molecule": {
+        "inputbox1": "top/itp file with the directive to be edited. ex: 'protein_in_water.top'",
+        "inputbox2": "old molecule name. ex: 'Protein_chain_A'",
+        "inputbox3": "new molecule name. ex: 'Hemoglobin'",
+        "ok_button": "clipboard_replaceMoleculeName",
+        "plaintext1": "the file will be modified in place"
+  },
+
+  "change quantity of a molecule in the top summary": {
+        "inputbox1": "top/itp file with the directive to be edited. ex: 'protein_in_water.top'",
+        "inputbox2": "molecule to change quantity. ex: 'Protein_chain_A'",
+        "inputbox3": "new quantity. ex: 342",
+        "ok_button": "clipboard_update_molecule_quantity",
+        "plaintext1": "the file will be modified in place"
+  },
+
+  "change system name": {
+        "inputbox1": "top/itp file of system. ex: 'protein_in_water.top'",
+        "inputbox2": "new name of the system. ex: 'hemoglobin in water'",
+        "ok_button": "clipboard_setSystemName",
+        "plaintext1": "the file will be modified in place"
+  },
+
+
+    "replace a word inside a specific directive": {
+        "inputbox1": "top/itp file of system. ex: 'protein_in_water.top'",
+        "inputbox2": "target directive. ex: '[ atoms ]'",
+        "inputbox3": "word to be replaced. ex: 'foo'",
+        "inputbox4": "new word. ex: 'bar'",
+        "ok_button": "clipboard_replaceWordInsideDirective",
+        "plaintext1": "the file will be modified in place"
+  },
+
+    "expand includes to the text they point to": {
+        "inputbox1": "top/itp file. ex: 'molecule_in_water.top'",
+        "droplist1": ["option 1: text output",
+                      "option 2: temp file output"],
+        "ok_button": "clipboard_include_all_itps"
+    },
+    "decompose molecules towards separate itps": {
+        "plaintext0": "XXX SHIT, I made two funcions that do the same. I think one is used by other functions, the other is better. here I call the better one",
+        "inputbox1": "top file. ex: 'molecule_in_water.top'",
+        "ok_button": "clipboard_deconstruct_top_into_molecules",
+        "plaintext1": "several itps appear in the temp folder, and the infos are returned like for example: {'Protein_chain_A': 'C:\\Users\\Henrique\\AppData\\Local\\Temp\\tmplrzjpaxr.itp', 'Support_chain_B': 'C:\\Users\\Henrique\\AppData\\Local\\Temp\\tmpiarjc86s.itp', 'SOL': 'C:\\Users\\Henrique\\AppData\\Local\\Temp\\tmp05dvn9xp.itp'}"
+    },
+    "delete an atom using its id <NOT>": {
+        "plaintext0": "XXX",
+        "inputbox1": "xxxxx",
+        "ok_button": "clipboard_xxxxx",
+        "plaintext1": "that atom will disapear fro [ atoms ] and lines with that id will be deleted from [ bonds ] [angles ] [ pairs ] and [ dihedrals ]"
+    },
+    "reorder ids that have gaps because of atom deletion <NOT>": {
+        "plaintext0": "XXX",
+        "inputbox1": "xxxxx",
+        "ok_button": "clipboard_xxxxx",
+        "plaintext1": "xxx"
+    }
+
+
+},
+
+"run": {
+    "runREALISTIC": {
+
+        "inputbox1": "suffix without quotes after runREALISTIC__ ex: ala_inW",
+        "inputbox2": "gro without quotes. ex: ala_inW.gro",
+        "inputbox3": "top without quotes. ex: ala_inW.top",
+        "inputbox4": "useless prod duration (ns). ex: 1",
+        "inputbox5": "temperature (K). ex: 298",
+        "droplist6": [
+                     "charmm36",
+                     "martini3"
+                    ],
+        "droplist7": [
+                     "pc",
+                     "oxygen",
+                     "rome"
+                    ],
+        "inputbox8": "nt OMP. ex: 2",
+        "inputbox9": "nt MPI. ex: 8",
+        "ok_button": "clipboard_runREALISTIC"
+        
+      },
+
+    "runBENCHMARK <NOT TESTED>": {
+      "droplist": ["local",
+                   "oxygen",
+                   "rome"],
+        "inputbox1": "tpr file. ex: 'prod.tpr'",
+        "ok_button": "clipboard_runBENCHMARK"
+      },
+
+
+
+    "runFEPoff": {
+        "inputbox1": "suffix without quotes after runRE__ ex: ala_inW",
+        "inputbox2": "gro without quotes. ex: ala_inW.gro",
+        "inputbox3": "top without quotes. ex: ala_inW.top",
+        "inputbox4": "duration (ns). ex: 100",
+        "inputbox5": "temperature list in quotes (K). ex: '283 298 313' ",
+        "droplist6": [
+                     "charmm36",
+                     "martini3"
+                    ],
+        "droplist7": [
+                     "pc",
+                     "oxygen",
+                     "rome",
+                     "genoa",
+                     "MI250"
+                    ],
+        "inputbox8": "molecule to be decoupled. ex: main_molecule_0",
+        "inputbox9": "nt OMP. ex: 2",
+        "inputbox10": "nt MPI. ex: 8",
+      "ok_button": "clipboard_runFEPoff"
+    },
+
+    "runREPLEX": {
+        "inputbox1": "suffix without quotes after runFEPoff__ ex: bulk",
+        "inputbox2": "gro without quotes. ex: bulk.gro",
+        "inputbox3": "top without quotes. ex: bulk.top",
+        "inputbox4": "duration (ns). ex: 1000",
+        "inputbox5": "temperature max (K). ex: '313 ",
+        "inputbox6": "temperature max (K). ex: '333 ",
+        "droplist7": [
+                     "charmm36",
+                     "martini3"
+                    ],
+        "droplist8": [
+                     "pc",
+                     "oxygen",
+                     "rome",
+                     "genoa",
+                     "MI300"
+                    ],
+        "inputbox9": "nt OMP. ex: 2",
+        "inputbox10": "nt MPI. ex: 8",
+      "ok_button": "clipboard_runREPLEX"
+    },
+
+
+    "runFEPswitch <NOT>": {
+      "droplist": ["local <NOT>",
+                   "oxygen <NOT>",
+                   "rome <NOT>"],
+      "inputbox0": "suffix",
+      "inputbox2": "gro file WITH EXTRA COLUMNS",
+      "inputbox3": "top file",
+      "inputbox4": "duration (ns)",
+      "ok_button": "xxxxx"
+    },
+
+    "runFEPtransfer <NOT>": {
+      "droplist": ["local <NOT>",
+                   "oxygen <NOT>",
+                   "rome <NOT>"],
+      "inputbox0": "suffix",
+      "inputbox2": "gro",
+      "inputbox3": "top",
+      "inputbox4": "duration (ns)",
+      "ok_button": "xxxxx"
+    },
+
+    "runSTEERED <NOT>": {
+      "droplist": ["local <NOT>",
+                   "oxygen <NOT>",
+                   "rome (moab wrapper with time limit) <NOT>"],
+      "radiobutton1": "target mol pulled from anchor mol",
+      "radiobutton2": "target mol pulled using a magic force",
+      "ok_button": "xxxxx"
+    },
+
+    "runUMBRELLAS <NOT>": {
+      "droplist": ["local <NOT>",
+                   "oxygen <NOT>",
+                   "rome (moab wrapper with time limit) <NOT>"],
+      "ok_button": "xxxxx"
+    },
+
+ 
+
+
+
+
+
+
+    "mdrun_all_tprs": {
+      "droplist": ["local <NOT>",
+                   "oxygen <NOT>",
+                   "rome (moab wrapper with time limit) <imperfect>"],
+
+      "radiobutton1": "paralelize in a simple way",
+      "inputbox1": "-nt. ex: 8 ",
+      "radiobutton2": "paralelize via openMP and MPI",
+      "inputbox2": "openMP (-ntomp or OMP_NUM_THREADS=). ex: 1 ",
+      "inputbox3": "MPI (-ntmpi or #MSUB -n). ex: 16",
+      "radiobutton3": "paralelize via domain decomposition",
+      "inputbox4": "-dd. ex: 3 3 3",
+      "inputbox5": "-npme. ex: 1",
+      "inputbox6": "-dlb. ex: yes",
+      "ok_button": "xxxxx"
+    }
+
+
+
+},
+
+"analysis (potential)": {
+
+    "energy <NOT>": {
+    "droplist1": ["minimize",
+                  "not minimize"],
+
+      "radiobutton1": "XXX",
+      "radiobutton2": "XXXXX",
+
+      "ok_button": "clipboard_XXXX",
+      "plaintext1": "a folder portential_energy_<gro name> will be created to store the calculations. the final number will be in RESULTS.txt"
+    },
+
+    "energy scan": {
+      "radiobutton1": "bond <NOT>",
+      "radiobutton2": "angle <NOT>",
+      "radiobutton3": "dihedral",
+      "inputbox0": "gro. ex: proxy_aligned.gro",
+      "inputbox1": "top OBS: the itp of the molecule MUST be inside the top, you cannot just include it. ex: CHYO_proxy_complete.top",
+      "inputbox2": "id i. ex: 15. OBS: id like in gromacs, starting at 1",
+      "inputbox3": "id j. ex: 16. OBS: id like in gromacs, starting at 1",
+      "inputbox4": "id k. ex:  1. OBS: id like in gromacs, starting at 1",
+      "inputbox5": "id l. ex: 11. OBS: id like in gromacs, starting at 1",
+      "inputbox6": "out folder name without quotes. ex: scan_gro",
+      "ok_button": "clipboard_gro_scan",
+      "plaintext1": "a folder will be created with all structures and all energy values"
+    },
+
+
+    "collect energy scan results to dictionary": {
+      "inputbox3": "folder with energy scan without quotes. ex: scan_gro",
+        "ok_button": "clipboard_collect_optimized_gromacs_scan"
+    }
+
+  },
+
+"analysis (timeline)": {
+
+    "Ramachandran": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+
+      "ok_button": "clipboard_rama"
+    },
+    "DSSP": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "clipboard_dssp"
+    },
+    "SASA": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "clipboard_sasa"
+    },
+    "H bonds": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+        "ok_button": "xxxxx"
+      },
+    "Distance between 2 atoms": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "xxxxx"
+    },
+    "phi and psi": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "xxxxx"
+    },
+    "RMSD from reference": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "xxxxx"
+    },
+    "Gyration radius": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "xxxxx"
+    },
+
+    "Quadrupole": {
+      "radiobutton1": "calculate",
+      "radiobutton2": "plot",
+      "ok_button": "xxxxx"
+    }
+
+},
+
+"analysis (FEP)": {
+    "check convergence <NOT>": {
+        "ok_button": "xxxxx"
+    },
+
+    "see the length of all lambdas":{
+      "inputbox1": "folder containing two FEPoff results, ex: ourTOG-transfer",
+      "ok_button": "clipboard_ns_for_all_lambdas"
+    },
+
+
+
+    "whats the delta E off": {
+      "inputbox1": "folder containing one FEPoff result, it must have the bartint file inside",
+      "ok_button": "clipboard_Delta_E_off",
+      "plaintext1": "the code will look for one barint file. Take the value on the last line and convert from kt to kJ/mol"
+    },
+    "whats the delta E transfer from Octane to Water": {
+      "inputbox1": "folder containing two FEPoff results, each one must contain their own barint calculation. ex: ourTOG-transfer",
+      "ok_button": "clipboard_Delta_E_Transfer_OtoW",
+      "plaintext1": "the code will look for two barint files. The first in a folder with 'O' in the name, and another with W in the name. It will see the last line in both. convert kt to kJ/mol, and subtract"
+    },
+    "draw termodinamic cycle <NOT>": {
+      "inputbox1": "molecule to vanish",
+      "ok_button": "xxxxx"
+    }
+
+},
+
+"QM construct molecules as psi4 object":{
+
+  "create psi4 molecule": {
+    "radiobutton1": "hardcode from scratch",
+    "radiobutton2": "from gro file",
+    "radiobutton3": "from xyz file",
+      "ok_button": "clipboard_create_psi4_molecule"
+  },
+
+
+  "see psi4 molecule (labeled)": {
+    "inputbox1": "variable containing psi4 molecule. ex: mymol",
+      "ok_button": "clipboard_see_psi4_molecule"
+  },
+
+  "reorder ids of psi4 molecule to match gro": {
+    "inputbox1": "python variable containing psi4 molecule. ex: mymol",
+    "inputbox2": "python dictionary representing reordering. ex: d_groid_psi4id. it should contain somethink like {1: 3, 2: 11,  3: 5, ...}",
+      "ok_button": "clipboard_reorder_psi4_molecule"
+  },
+
+  "psi4 object -> xyz": {
+      "inputbox1": "python variable containing psi4 molecule. ex: mymol",
+      "inputbox2": "name of the file to be outputed.ex: mymol.xyz ",
+      "ok_button": "clipboard_psi2xyz"
+  },
+
+
+  "xyz -> gro,pdb,xyz with defined dihedral": {
+      "inputbox2": "name of the input file.ex: mymol.xyz ",
+      "inputbox3": "name of the output filder file.ex: aligned ",
+      "inputbox4": "whats the dihedral to setup. ex: [17,15,16,1]",
+      "inputbox5": "list of the dihedral angles that will be imposed. the function will create one set of files for each angle. ex: [0] ",
+      "ok_button": "clipboard_xyz2GroPdbXyz_WithDefinedDihedral"
+  }
+
+
+
+
+},
+
+
+"QM analysis":{
+
+
+
+  "energy": {
+    "radiobutton1": "HF",
+    "radiobutton2": "DFT",
+    "radiobutton3": "CCSD(T)",
+    "inputbox1": "basis set without quotes. ex: 6-31G(d)",
+    "inputbox2": "out folder to be created. ex: qm_octn",
+      "ok_button": "clipboard_qm_energy"
+  },
+
+  "energy scan": {
+    "radiobutton1": "bond <NOT>",
+    "radiobutton2": "angle <NOT>",
+    "radiobutton3": "dihedral",
+    "inputbox1": "python variable containing the molecule as psi4 object. ex: mymol",
+    "inputbox2": "ids of the bond/angle/dihedral. ex: [2, 3 ,4, 7]. OBS: SUBTRACT 1, BECAUSE HERE THEY START AT ZERO!",
+    "inputbox3": "out folder name without quotes. ex: scan_qm",
+    "ok_button": "clipboard_scan",
+    "plaintext1": "a folder will be created with all structures and all energy values"
+  },
+
+  "collect energy scan results to dictionary": {
+    "inputbox3": "folder with energy scan without quotes. ex: scan_qm",
+      "ok_button": "clipboard_collect_optimized_qm_scan"
+  },
+
+
+
+
+
+  "check cube files": {
+    "radiobutton1": "check 1 (psi slices by order)",
+    "radiobutton2": "check 2 (density isosurface with ESP)",
+    "radiobutton3": "check 3 (ESP histogram)",
+      "ok_button": "clipboard_qm_checks"
+  },
+
+  "trim ESP cube file": {
+      "ok_button": "clipboard_trim_ESP"
+  },
+
+
+
+
+  "cool visuals": {
+    "radiobutton1": "cube -> psi waving",
+    "radiobutton2": "expression -> isosurface",
+      "ok_button": "xxxx"
+  }
+
+},
+
+
+
+"table (bash)": {
+
+    "parse": {
+      "inputbox1": "regex putting parenthesis on the stuff to go to columns, for example: .*_([0-9]+)\\.(.*)",
+      "inputbox2": "which selection goes to each column. \\number represent a selection, & represents the entire pattern. for example: \\2 \\1 &",
+      "inputbox3": "file name. ex: foo.txt (sdin that can be piped!)",
+      "ok_button": "clipboard_parse_bash",
+      "plaintext1": "________what________",
+      "plaintext2": ". (any character)",
+      "plaintext3": "[abc] (a, b or c)",
+      "plaintext4": "[a-zA-Z] (letters)",
+      "plaintext5": "[a-zA-Z0-9] (letters and numbers)",
+      "plaintext51": "[ ] (space)",
+      "plaintext52": "[^ ] (not space)",
+      "plaintext6": "____________________",
+      "plaintext7": "^ (start of line)",
+      "plaintext8": "$ (end of line)",
+      "plaintext9": "______quantity______",
+      "plaintext11": "* (0-infinite)",
+      "plaintext12": "+ (1-infinite)",
+      "plaintext13": "{n} (exactly n)",
+      "plaintext14": "{n,m} (between n and m)",
+      "plaintext15": "{n,} (n-infinite)"
+    },
+
+    "filter table": {
+      "inputbox1": "value to be found. ex: CA",
+      "inputbox2": "file to be filtered. ex: ffbonded.itp",
+      "inputbox3": "column id. ex: 1 (for column A)",
+      "plaintext1": "ps1: if the separator is some character instead of spaces or tabs, add the -F flag. ex: -F';'",
+      "plaintext2": "ps2: to filter by multiple columns or multiple values, use the -e flag. ex: -e 'column1 == value1' -e 'column2 == value2'",
+      "ok_button": "clipboard_fiter_table_bash"
+    },
+    "sort table": {
+      "inputbox1": "file with table to be sorted. ex: file.csv",
+      "inputbox2": "column id. ex: 1 (for column A)",
+      "radiobutton4": "lexical",
+      "radiobutton5": "numerical",
+      "plaintext1": "ps1: if the separator is some character instead of spaces or tabs, add the -t flag. ex: -t;",
+      "plaintext2": "ps2: to sort by multiple columns, in a hierarquical way, just repeat the -k flag. ex: sort -k1,1n -k2,2n",
+      "ok_button": "clipboard_sort_table_bash"
+    },
+    "unique lines": {
+      "inputbox1": "file with table",
+      "plaintext1": "ps: if the separator is some character instead of spaces or tabs, add the -t flag. ex: -t;",
+      "ok_button": "clipboard_unique_lines_bash"
+    }
+
+
+
+
+},
+
+
+"table (pandas)": {
+
+    "parse csv": {
+      "plaintext": "df=pd.read_csv('file.csv', sep=';')",
+      "ok_button": "xxxxx"
+    },
+
+
+    "filter table": {
+      "plaintext": "df.query(\"column1 == 'hi' and column2 == 32\")",
+      "ok_button": "xxxxx"
+    },
+
+    "sort table": {
+      "plaintext": "df.sort_values(by='column1', ascending=True, inplace=True)",
+      "ok_button": "xxxxx"
+    },
+    "unique lines": {
+      "plaintext": "df['column1'].unique()",
+      "ok_button": "xxxxx"
+    },
+    "groupby": {
+      "plaintext": "df.groupby('column').agg({'another_column': 'sum'})",
+      "ok_button": "xxxxx"
+    },
+    "merge": {
+      "plaintext": "pd.merge(df1, df2, left_on='column1', right_on='column2')",
+      "ok_button": "xxxxx"
+    },
+    "concat": {
+      "plaintext": "pd.concat([df1, df2], ignore_index=True)",
+      "ok_button": "xxxxx"
+    },
+    "map": {
+      "plaintext": "df.map{'hi':'oi','bye':'tchau'}",
+      "ok_button": "xxxxx"
+    },
+    "apply": {
+      "plaintext": "df.apply(lambda x: x + 1)",
+      "ok_button": "xxxxx"
+    },
+
+    "describe": {
+      "plaintext": "df.describe()",
+      "ok_button": "xxxxx"
+    },
+    "treat na": {
+      "plaintext": "dfclean=df.fillna(0) dfclean=df.dropna()",
+      "ok_button": "xxxxx"
+    },
+    "change type": {
+      "plaintext": "df['col'].astype(int)",
+      "plaintext2": "OPTIONS: int float str bool 'category'",
+      "ok_button": "xxxxx"
+    },
+    "export df column to list": {
+      "plaintext": "df['col'].tolist()",
+      "ok_button": "xxxxx"
+    }
+
+
+},
+
+
+
+
+
+
+
+"ML":{
+
+
+  "Prepair": {
+    "radiobutton1": "Dummization",
+    "radiobutton2": "Normalization",
+    "radiobutton3": "Feature selection",
+      "ok_button": "xxxx"
+  },
+
+  "Train test split <ok>": {
+      "ok_button": "clipboard_train_test_plit"
+  },
+
+  "predict continuous y": {
+    "radiobutton1": "XGBoost",
+    "radiobutton6": "decision tree",
+    "radiobutton7": "naive bayes",
+    "radiobutton8": "neural network",
+    "radiobutton9": "multiple linear regression",
+      "ok_button": "clipboard_mlcontinuous"
+  },
+
+
+  "predict discrete y": {
+    "radiobutton0": "XGBoost",
+    "radiobutton1": "svm",
+    "radiobutton2": "clustering - kmeans",
+    "radiobutton3": "clustering - hierarchical",
+    "radiobutton4": "clustering - DBSCAN",
+      "ok_button": "clipboard_mldiscrete"
+  },
+
+
+  "Evaluate": {
+    "radiobutton1": "cross validation",
+    "radiobutton2": "confusion matrix",
+    "radiobutton3": "classification report",
+    "radiobutton4": "ROC AUC",
+    "radiobutton5": "feature importance",
+      "ok_button": "xxxx"
+  }
+
+
+},
+
+"two variable relation":{
+
+  "continuous vs. continuous (curve-fitting)": {
+    "radiobutton1": "straight line",
+    "radiobutton2": "exponential",
+    "radiobutton3": "polinomial",
+    "radiobutton4": "sinusoidal",
+    "radiobutton5": "fourrier (dihedral type 5)",
+    "radiobutton6": "1+cos (dihedral type 9)",
+      "ok_button": "clipboard_cc_fit"
+  },
+
+
+
+
+  "continuous vs. discrete": {
+    "radiobutton1": "the discrete variable has 2 categories",
+    "radiobutton2": "the discrete variable has MANY categories",
+      "ok_button": "clipboard_cd_test"
+  },
+  "discrete vs. discrete": {
+      "ok_button": "clipboard_dd_test"
+  }
+
+
+
+
+},
+
+
+
+
+
+
+"QC of reads": {
+
+    "fastqc": {
+      "inputbox1": "xxxxx",
+      "ok_button": "xxxxx"
+    }
+},
+
+"alignment": {
+    "Blast": {
+        "plaintext":"search of 1 query into large database",
+        "ok_button": "xxxxx"
+    },
+    "Muscle": {
+      "plaintext":"simultaneous comparisson of multiple strings. e.g. hemogobin of all animals",
+      "ok_button": "xxxxx"
+    },
+    "Bowtie2": {
+      "plaintext":"mapping of DNA reads into DNA. e.g. new individual or chipseq",
+      "ok_button": "xxxxx"
+    },
+    "Hisat2": {
+        "plaintext":"mapping of *RNA* reads into DNA",
+        "ok_button": "xxxxx"
+      }
+},
+
+"mapped DNA analysis (new individual)": {
+    "Picard - remove PCR replicas": {
+        "ok_button": "xxxxx"
+    },
+    "Picard - correct and sort pairs": {
+        "ok_button": "xxxxx"
+    },
+    "Picard - add group info": {
+        "ok_button": "xxxxx"
+    },
+    "Picard - index BAM": {
+        "ok_button": "xxxxx"
+    },
+    "GATK - create dictionary": {
+        "ok_button": "xxxxx"
+    },
+    "GATK - variant calling": {
+        "ok_button": "xxxxx"
+    },
+    "BCF Tools - filter variants of my interest": {
+        "ok_button": "xxxxx"
+    }
+},
+
+"mapped DNA analysis (chipseq)": {
+    "Macs2 callpeak": {
+       "plaintext":"fing points of atachment of protein in DNA",
+        "ok_button": "xxxxx"
+    },
+    "Generate motif": {
+        "ok_button": "xxxxx"
+    }
+},
+
+"mapped *RNA* analysis": {
+    "FeatureCounts": {
+        "plaintext":"generate read table per gene",
+        "ok_button": "xxxxx"
+    },
+    "Desec2": {
+        "plaintext":"find differential expression of genes",
+        "ok_button": "xxxxx"
+    }
+},
+
+
+
+
+
+
+"SC analysis": {
+  "Load data": {
+    "radiobutton1": "one sample",
+    "radiobutton2": "several samples",
+      "ok_button": "xxxxx"
+  },
+    "Cell and gene QC": {
+      "radiobutton1": "plot count x genes",
+      "radiobutton2": "plot mitocondrial violin",
+        "radiobutton3": "filters",
+        "ok_button": "xxxxx"
+    },
+    "Normalization": {
+      "plaintext1":"DIVIDE PER TOTAL",
+      "radiobutton1": "counts",
+      "radiobutton2": "genes",
+      "radiobutton3": "xxxxx",
+      "plaintext2":"NON LINEAR TRANSFORM",
+      "radiobutton4": "log",
+      "radiobutton5": "sqrt",
+      "radiobutton6": "pearson residuals",
+      "ok_button": "xxxxx"
+    },
+    "Dimentionality reduction": {
+      "radiobutton1": "PCA;UMAP;t-SNE",
+      "ok_button": "xxxxx"
+    },
+    "Clusterization": {
+      "radiobutton1": "leiden <- best",
+      "radiobutton2": "louvain",
+      "radiobutton3": "plot",
+      "radiobutton4": "plot by sample",
+        "ok_button": "xxxxx"
+    },
+    "Calculate marker": {
+      "radiobutton1": "sc.tl.rank_genes_groups",
+      "radiobutton2": "deseq2",
+      "radiobutton3": "plot importance",
+      "radiobutton4": "plot volcanos",
+      "radiobutton5": "plot dots",
+      "ok_button": "xxxxx"
+    },
+    "Enrichment": {
+      "radiobutton1": "go biological process",
+      "radiobutton2": "kegg",
+      "radiobutton3": "plot bars",
+    "ok_button": "xxxxx"
+    },
+    "Insert external markers": {
+      "radiobutton1": "load data",
+      "radiobutton3": "plot external markers",
+    "ok_button": "xxxxx"
+    },
+
+    "Trajectory": {
+        "ok_button": "xxxxx"
+    },
+    "Velocity": {
+        "ok_button": "xxxxx"
+    },
+    "GRN inference": {
+      "ok_button": "xxxxx"
+      }
+},
+
+
+
+"terminal": {
+    "echo hello world !": {
+      "ok_button": "clipboard_hello_world"
+    },
+    ".bashrc settings": {
+      "plaintext1": "text to be inserted in .bashrc",
+      "ok_button": "clipboard_bashrc"
+    }
+},
+
+"hardware": {
+
+    "os": {
+      "ok_button": "clipboard_os_info"
+    },
+    "cpu": {
+        "ok_button": "clipboard_cpu_info"
+    },
+   "gpu (nvidia)": {
+        "ok_button": "clipboard_gpu_info"
+    },
+    "ram": {
+      "ok_button": "clipboard_avalable_ram",
+      "plaintext1": "OBS: look at AVAILABLE. free is completely unused, but If you need more, cache will be dumped"
+    },
+    "storage": {
+      "ok_button": "clipboard_avalable_storage",
+      "plaintext1": "OBS: look for devices WITH FILESYSTEM. they can be mounted. (remember FAT32 has a 4G limit per file)"
+    },
+    "filesystems usage": {
+      "ok_button": "clipboard_filesystems_and_disk_space"
+    },
+    "largest disk ocupyers here": {
+      "radiobutton1": "folders sizes",
+      "radiobutton2": "5 largest files nested",
+      "ok_button": "clipboard_folders_and_disk_space"
+    }
+
+
+
+
+    
+
+},
+
+
+
+"network and services": {
+    "my ip": {
+      "ok_button": "clipboard_ip"
+    },
+    "my ports listening": {
+      "ok_button": "clipboard_ports_listening"
+    },
+    "port forwarding": {
+      "ok_button": "clipboard_port_forwarding"
+    },
+    "start http server": {
+      "ok_button": "clipboard_start_server"
+    },
+    "all ips available for ssh": {
+      "ok_button": "clipboard_ips_to_ssh"
+    },
+    "ssh key generation": {
+      "radiobutton1": "see",
+      "radiobutton2": "generate",
+      "droplist": ["Ed25519 (modern)",
+                   "RSA (older systems)"],
+      "ok_button": "clipboard_keygen",
+      "plaintext1": "OBS: if there is already a key, dont overwrite! "
+    },
+    "ssh send key to host": {
+      "plaintext1": "this will put ~/.ssh/id_ed25519.pub inside ~/.ssh/authorized_keys of the host",
+
+      "ok_button": "clipboard_ssh_send_key_to_server",
+      "plaintext2": "OBS1: this wont work on github. do this instead: click on profile picture / Settings / SSH and GPG keys / New SSH key",
+      "plaintext3": "OBS2: this wont work on EC2. do this instead: EC2 / Network & Security / Key Pairs / Import key pair / then, actually louch a machine and use that key in EC2 / Instances / Launch instances / make several choices, such as Ubuntu 24.04 LTS, chose my key at 'Key pair (login)'  and set SSH   TCP   port 22   source: My IP"
+
+    },
+    ".ssh/config settings": {
+      "plaintext1": "text to be inserted in .ssh/config",
+      "ok_button": "clipboard_ssh_alias"
+      
+    },
+    "file transfer": {
+      "radiobutton1": "folder",
+      "radiobutton2": "chosen extension, keeping folder structure",
+      "inputbox1": "if you clicked on the chosen extension option. put it here. ex: gro",
+
+      "ok_button": "clipboard_file_transfer"
+      
+    }
+
+
+
+},
+
+
+"environment": {
+
+    "python location": {
+      "ok_button": "clipboard_python_location"
+    },
+    "modules location": {
+      "ok_button": "clipboard_modules_location"
+    },
+
+    "see all conda environments": {
+      "ok_button": "clipboard_see_all_conda_environments"
+    },
+    "create conda environment": {
+      "inputbox1": "environment name",
+      "inputbox2": "python version",
+      "ok_button": "clipboard_create_conda_environment"
+    }
+},
+
+"execution": {
+
+
+"make executable": {
+  "droplist": ["choose...",
+                 "shebang - interpreter will be bash",
+                 "shebang - interpreter will be python",
+                 "chmod - make executable",
+                 "export - add folder to PATH to call it directly"], 
+  "ok_button": "clipboard_make_executable"
+},
+
+"see content of the path variable": {
+  "ok_button": "clipboard_see_content_of_path_variable"
+},
+
+
+"execute file": {
+  "droplist": ["choose...",
+                 "------local------",
+                 "bash (./)", 
+                 "nextflow (nextflow run)", 
+                 "docker (docker run -d)",
+                 "------cluster------",
+                 "slurm (sbatch)",
+                 "torque (qsub)",
+                 "moab (msub)",
+                 "kubernetes (kubectl apply -f)",
+                 "yarn-hadoop (yarn jar)",
+                 "spark on top of yarn-hadoop (spark-submit --master yarn)"],
+  "ok_button": "clipboard_execute"
+},
+
+"whats being executed": {
+  "droplist": ["choose...",
+                "------local------",
+                "bash (top)", 
+                "nextflow (nextflow log)", 
+                "docker (docker ps)",
+                "------cluster------",
+                "slurm (squeue)",
+                "torque (qstat)",
+                "moab (showq)",
+                "kubernetes (kubectl get pods)",
+                "yarn-hadoop (yarn application -list)",
+                "spark on top of yarn-hadoop (use UI!)"],
+  "ok_button": "clipboard_see_running_processes"
+},
+
+"cancel execution": {
+
+  "droplist": ["choose...",
+                "------local------",
+                "bash (kill)", 
+                "nextflow (nextflow kill)", 
+                "docker (docker stop)",
+                "------cluster------",
+                "slurm (scancel)",
+                "torque (qdel)",
+                "moab(mjobctl -c)",
+                "kubernetes (kubectl delet pod)",
+                "yarn-hadoop (yarn application -kill)",
+                "spark on top of yarn-hadoop (yarn application -kill)"],
+  "ok_button": "clipboard_cancel_execution"
+}
+
+},
+
+"GIT": {
+
+    "init or clone": {
+      "radiobutton1": "init (project started localy)",
+      "plaintext1": "action required: go to github and create a new repository with the same name as the project folder ",
+
+      "radiobutton2": "clone (project started at github)",
+      "plaintext3": "action required: go to github and get the link",
+      "inputbox1": "link",
+
+      "ok_button": "clipboard_init_or_clone"
+    },
+
+    "pull": {
+        "ok_button": "clipboard_pull"
+      },
+      "add, commit": {
+        "inputbox1": "commit message",
+        "ok_button": "clipboard_add_commit"
+      },
+      "add, commit (to new branch, so I can explore a crazy idea)": {
+        "inputbox1": "insert the new branch name",
+        "inputbox2": "commit message",
+        "ok_button": "clipboard_add_commit_new_branch"
+      },
+      "push": {
+        "ok_button": "clipboard_push"
+      },
+      "go back to a previous commit JUST TO TAKE A LOOK": {
+        "plaintext2": "checkout",
+        "inputbox1": "commit hash to go back to",
+        
+        "ok_button": "clipboard_checkout",
+        "plaintext3": "OBS: this will cause a 'detached head', head is where I am, its only attached if its on the last commit",
+        "plaintext4": "ATTENTION: its mandatory to commit or stash all changes before ckecking out another commit"
+      },
+      "go back to a previous commit DEFINITIVELY": {
+        "inputbox1": "commit hash to go back to",
+        "radiobutton1": "reset --hard (DANGER: all posterior changes and commits will be deleted!)",
+        "radiobutton2": "revert (posterior commits will be kept, a new commit will be created with the same code as the chosen commit)",
+
+        "ok_button": "clipboard_go_back"
+      },
+      "stash": {
+        "inputbox1": "stash message",
+        "ok_button": "clipboard_stash"
+      },
+      "see all branches": {
+        "plaintext2": "branch",
+        "ok_button": "clipboard_see_all_branches"
+      },
+      "go to last commit of a branch": {
+        "plaintext2": "checkout",
+        "inputbox1": "destination branch",
+        "plaintext1": "ATTENTION: its mandatory to commit or stash all changes before changing branch",
+        "ok_button": "clipboard_change_branch"
+      },
+      "merge": {
+        "inputbox1": "sorce branch with extra code",
+        "inputbox2": "destination branch, with the production code to be updated",
+        "ok_button": "clipboard_merge"
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+  }
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Black Rainbow</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <!-- Ensure jQuery is loaded before your custom script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <!-- Horizontal Black Header -->
+  <header class="main-header">
+    <h1>Command Organizer</h1>
+  </header>
+
+  <!-- Container for Vertical Stripes -->
+  <div class="rainbow-container">
+    {% for stripe_title, commands in config.items() %}
+      <!-- <div class="stripe">-->
+      <div class="stripe"  style="background-color: {{colorconfig[stripe_title]}}">
+      <!-- <div class="stripe"  style="background-color: #f6a5a5">-->
+        <h2>{{ stripe_title }}</h2>
+        {% for command_title, elements in commands.items() %}
+          <div class="command-box">
+            <div class="box-header" onclick="toggleBox(this)">
+              {{ command_title }}
+            </div>
+            <div class="box-content" style="display:none;">
+              {% for element_id, element_label in elements.items() %}
+                {% if 'plaintext' in element_id %}
+                <div class="text-group">
+                  <p class="plaintext">{{ element_label }}</p>
+                </div>
+
+                {% elif 'inputbox' in element_id %}
+                  <div class="input-group">
+                    <label for="{{ stripe_title }}_{{ command_title }}_{{ element_id }}">{{ element_label }}</label>
+                    <input type="text" id="{{ stripe_title }}_{{ command_title }}_{{ element_id }}" name="{{ element_id }}">
+                  </div>
+                {% elif 'radiobutton' in element_id %}
+                  <div class="radio-group">
+                    <input type="radio" id="{{ stripe_title }}_{{ command_title }}_{{ element_id }}" 
+                           name="{{ stripe_title }}_{{ command_title }}_radio" value="{{ element_label }}">
+                    <label for="{{ stripe_title }}_{{ command_title }}_{{ element_id }}">{{ element_label }}</label>
+                  </div>
+                {% elif 'droplist' in element_id %}
+                    <div class="droplist-group">
+                    <!-- <label for="{{ stripe_title }}_{{ command_title }}_{{ element_id }}">Choose an option:</label>-->
+                    <select id="{{ stripe_title }}_{{ command_title }}_{{ element_id }}" name="{{ element_id }}">
+                      {% for option in element_label %}
+                      <option value="{{ option }}">{{ option }}</option>
+                      {% endfor %}
+                    </select>
+                    </div>
+                {% elif 'ok_button' in element_id %}
+                  <button onclick="submitForm('{{ element_label }}', this)">OK</button>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
