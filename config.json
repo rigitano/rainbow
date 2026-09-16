@@ -570,8 +570,8 @@
 
 
     "box filled with the same molecule": {
-        "inputbox1": "molecule that will fill the box, represented as a list of gro and top files. ex: ['octn.gro', 'octn.itp']",
-        "inputbox2": "forcefield. ex: 'charmm36-jul2022' or 'martini3001' or 'marini22'",
+        "inputbox1": "file with molecule that will fill the box. ex: ['octn.gro', 'octn.itp']",
+        "inputbox2": "forcefield. ex: 'charmm36-jul2022' or 'martini3001'",
         "inputbox3": "box size. ex: '5 5 5'",
         "inputbox4": "max number of particles. ex: 1000",
 
