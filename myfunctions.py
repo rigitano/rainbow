@@ -653,7 +653,7 @@ def clipboard_init_or_clone(s_chosen_action,s_repo_link):
 
     # Copy text to the clipboard, depending on the value of s_chosen_action and s_chosen_action
     if s_chosen_action == "init (project started localy)":
-        pyperclip.copy("git init --initial-branch=main && git remote add origin git@github.com:rigitano/$(basename \"$PWD\").git && git push -u origin main")
+        pyperclip.copy("git init --initial-branch=main && git add . && git commit -m 'Initial commit' && git remote add origin https://github.com/rigitano/$(basename \"$PWD\").git && git push -u origin main")
 
     elif s_chosen_action == "clone (project started at github)":
         pyperclip.copy(f"git clone {s_repo_link}")
