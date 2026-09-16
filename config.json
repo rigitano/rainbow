@@ -2,6 +2,41 @@
 
 
 
+"hardware": {
+
+    "os": {
+      "ok_button": "clipboard_os_info"
+    },
+    "cpu": {
+        "ok_button": "clipboard_cpu_info"
+    },
+   "gpu (nvidia)": {
+        "ok_button": "clipboard_gpu_info"
+    },
+    "ram": {
+      "ok_button": "clipboard_avalable_ram",
+      "plaintext1": "OBS: look at AVAILABLE. free is completely unused, but If you need more, cache will be dumped"
+    },
+    "storage devices": {
+      "ok_button": "clipboard_avalable_storage",
+      "plaintext1": "OBS: look for devices WITH FILESYSTEM. they can be mounted. (remember FAT32 has a 4G limit per file)"
+    },
+    "filesystems usage": {
+      "ok_button": "clipboard_filesystems_and_disk_space"
+    },
+    "largest disk ocupyers here": {
+      "radiobutton1": "folders sizes",
+      "radiobutton2": "5 largest files nested",
+      "ok_button": "clipboard_folders_and_disk_space"
+    }
+
+
+
+
+    
+
+},
+
 
 
 "file search": {
@@ -266,9 +301,6 @@
       "inputbox2": ".gro file where the coordinates are (without quotes). ex: /data2/henrique/qm/CHYO.gro",
       "ok_button": "call_see_partial_charges",
       "plaintext1": "ATENTION: unlike other visualisations. this will create a pdb and load it as a new molecule"
-    },
-    "Forces from TRR <NOT>": {
-      "ok_button": "xxxxx"
     }
 
 
@@ -496,10 +528,6 @@
         "inputbox4": "square size. ex: 3",
         "inputbox5": "output file name. ex: 'protein_with_truss.pdb'",
         "ok_button": "clipboard_add_truss"
-    },
-
-    "add a plane to pdb <NOT>": {
-        "ok_button": "xxxxx"
     }
 
 },
@@ -539,9 +567,7 @@
     },             
 
 
-    "molecule in membrane <NOT>": {
-      "ok_button": "xxxxx"
-    },
+
 
     "box filled with the same molecule": {
         "inputbox1": "file with molecule that will fill the box. ex: 'octn.pdb'",
@@ -553,15 +579,9 @@
         "ok_button": "clipboard_pdb2box_full_of_that"
     },
 
-    "tube of lipids <NOT>": {
-        "ok_button": "xxxxx"
-    },
+
 
     "sphere of lipids <NOT>": {
-        "ok_button": "xxxxx"
-    },
-
-    "plane of lipids <NOT>": {
         "ok_button": "xxxxx"
     }
 
@@ -635,14 +655,14 @@
         "ok_button": "clipboard_get_atom_global_id",
         "plaintext1": "the output is the GLOBAL id as a integer. example: 315"
     },
-    "get atom characteristics (using id) <NOT IMPLEMENTED. JUST MOL NAME>": {
+    "get atom mol name (using id)": {
         "inputbox1": "top file. ex: molecule_in_water.top",
 
         "inputbox2": "atom GLOBAL id",
 
-        "ok_button": "clipboard_get_atom_infos_from_global_id",
-        "plaintext1": "output example: {'mol_name':'Protein_chain_A','instantiation':1,'residue':4,'name':'CA'}}"
-},
+        "ok_button": "clipboard_get_atom_infos_from_global_id"
+
+      },
     "get basic infos of all molecules": {
        "inputbox1": "top file. ex: 'molecule_in_water.top'",
         "ok_button": "clipboard_basic_infos_of_molecules",
@@ -811,7 +831,7 @@
         
       },
 
-    "runBENCHMARK <NOT TESTED>": {
+    "runBENCHMARK <NOT CLEAN>": {
       "droplist": ["local",
                    "oxygen",
                    "rome"],
@@ -868,43 +888,9 @@
     },
 
 
-    "runFEPswitch <NOT>": {
-      "droplist": ["local <NOT>",
-                   "oxygen <NOT>",
-                   "rome <NOT>"],
-      "inputbox0": "suffix",
-      "inputbox2": "gro file WITH EXTRA COLUMNS",
-      "inputbox3": "top file",
-      "inputbox4": "duration (ns)",
-      "ok_button": "xxxxx"
-    },
 
-    "runFEPtransfer <NOT>": {
-      "droplist": ["local <NOT>",
-                   "oxygen <NOT>",
-                   "rome <NOT>"],
-      "inputbox0": "suffix",
-      "inputbox2": "gro",
-      "inputbox3": "top",
-      "inputbox4": "duration (ns)",
-      "ok_button": "xxxxx"
-    },
 
-    "runSTEERED <NOT>": {
-      "droplist": ["local <NOT>",
-                   "oxygen <NOT>",
-                   "rome (moab wrapper with time limit) <NOT>"],
-      "radiobutton1": "target mol pulled from anchor mol",
-      "radiobutton2": "target mol pulled using a magic force",
-      "ok_button": "xxxxx"
-    },
 
-    "runUMBRELLAS <NOT>": {
-      "droplist": ["local <NOT>",
-                   "oxygen <NOT>",
-                   "rome (moab wrapper with time limit) <NOT>"],
-      "ok_button": "xxxxx"
-    },
 
  
 
@@ -936,16 +922,7 @@
 
 "analysis (potential)": {
 
-    "energy <NOT>": {
-    "droplist1": ["minimize",
-                  "not minimize"],
 
-      "radiobutton1": "XXX",
-      "radiobutton2": "XXXXX",
-
-      "ok_button": "clipboard_XXXX",
-      "plaintext1": "a folder portential_energy_<gro name> will be created to store the calculations. the final number will be in RESULTS.txt"
-    },
 
     "energy scan": {
       "radiobutton1": "bond <NOT>",
@@ -988,33 +965,27 @@
       "radiobutton2": "plot",
       "ok_button": "clipboard_sasa"
     },
-    "H bonds": {
+    "H bonds <NOT>": {
       "radiobutton1": "calculate",
       "radiobutton2": "plot",
         "ok_button": "xxxxx"
       },
-    "Distance between 2 atoms": {
+    "Distance between 2 atoms <NOT>": {
       "radiobutton1": "calculate",
       "radiobutton2": "plot",
       "ok_button": "xxxxx"
     },
-    "phi and psi": {
+    "phi and psi <NOT>": {
       "radiobutton1": "calculate",
       "radiobutton2": "plot",
       "ok_button": "xxxxx"
     },
-    "RMSD from reference": {
+    "RMSD from reference <NOT>": {
       "radiobutton1": "calculate",
       "radiobutton2": "plot",
       "ok_button": "xxxxx"
     },
-    "Gyration radius": {
-      "radiobutton1": "calculate",
-      "radiobutton2": "plot",
-      "ok_button": "xxxxx"
-    },
-
-    "Quadrupole": {
+    "Gyration radius <NOT>": {
       "radiobutton1": "calculate",
       "radiobutton2": "plot",
       "ok_button": "xxxxx"
@@ -1023,9 +994,7 @@
 },
 
 "analysis (FEP)": {
-    "check convergence <NOT>": {
-        "ok_button": "xxxxx"
-    },
+
 
     "see the length of all lambdas":{
       "inputbox1": "folder containing two FEPoff results, ex: ourTOG-transfer",
@@ -1276,18 +1245,18 @@
 "ML":{
 
 
-  "Prepair": {
+  "Prepair <NOT>": {
     "radiobutton1": "Dummization",
     "radiobutton2": "Normalization",
     "radiobutton3": "Feature selection",
       "ok_button": "xxxx"
   },
 
-  "Train test split <ok>": {
+  "Train test split": {
       "ok_button": "clipboard_train_test_plit"
   },
 
-  "predict continuous y": {
+  "predict continuous y <NOT>": {
     "radiobutton1": "XGBoost",
     "radiobutton6": "decision tree",
     "radiobutton7": "naive bayes",
@@ -1297,7 +1266,7 @@
   },
 
 
-  "predict discrete y": {
+  "predict discrete y <NOT>": {
     "radiobutton0": "XGBoost",
     "radiobutton1": "svm",
     "radiobutton2": "clustering - kmeans",
@@ -1307,7 +1276,7 @@
   },
 
 
-  "Evaluate": {
+  "Evaluate <NOT>": {
     "radiobutton1": "cross validation",
     "radiobutton2": "confusion matrix",
     "radiobutton3": "classification report",
@@ -1353,148 +1322,6 @@
 
 
 
-"QC of reads": {
-
-    "fastqc": {
-      "inputbox1": "xxxxx",
-      "ok_button": "xxxxx"
-    }
-},
-
-"alignment": {
-    "Blast": {
-        "plaintext":"search of 1 query into large database",
-        "ok_button": "xxxxx"
-    },
-    "Muscle": {
-      "plaintext":"simultaneous comparisson of multiple strings. e.g. hemogobin of all animals",
-      "ok_button": "xxxxx"
-    },
-    "Bowtie2": {
-      "plaintext":"mapping of DNA reads into DNA. e.g. new individual or chipseq",
-      "ok_button": "xxxxx"
-    },
-    "Hisat2": {
-        "plaintext":"mapping of *RNA* reads into DNA",
-        "ok_button": "xxxxx"
-      }
-},
-
-"mapped DNA analysis (new individual)": {
-    "Picard - remove PCR replicas": {
-        "ok_button": "xxxxx"
-    },
-    "Picard - correct and sort pairs": {
-        "ok_button": "xxxxx"
-    },
-    "Picard - add group info": {
-        "ok_button": "xxxxx"
-    },
-    "Picard - index BAM": {
-        "ok_button": "xxxxx"
-    },
-    "GATK - create dictionary": {
-        "ok_button": "xxxxx"
-    },
-    "GATK - variant calling": {
-        "ok_button": "xxxxx"
-    },
-    "BCF Tools - filter variants of my interest": {
-        "ok_button": "xxxxx"
-    }
-},
-
-"mapped DNA analysis (chipseq)": {
-    "Macs2 callpeak": {
-       "plaintext":"fing points of atachment of protein in DNA",
-        "ok_button": "xxxxx"
-    },
-    "Generate motif": {
-        "ok_button": "xxxxx"
-    }
-},
-
-"mapped *RNA* analysis": {
-    "FeatureCounts": {
-        "plaintext":"generate read table per gene",
-        "ok_button": "xxxxx"
-    },
-    "Desec2": {
-        "plaintext":"find differential expression of genes",
-        "ok_button": "xxxxx"
-    }
-},
-
-
-
-
-
-
-"SC analysis": {
-  "Load data": {
-    "radiobutton1": "one sample",
-    "radiobutton2": "several samples",
-      "ok_button": "xxxxx"
-  },
-    "Cell and gene QC": {
-      "radiobutton1": "plot count x genes",
-      "radiobutton2": "plot mitocondrial violin",
-        "radiobutton3": "filters",
-        "ok_button": "xxxxx"
-    },
-    "Normalization": {
-      "plaintext1":"DIVIDE PER TOTAL",
-      "radiobutton1": "counts",
-      "radiobutton2": "genes",
-      "radiobutton3": "xxxxx",
-      "plaintext2":"NON LINEAR TRANSFORM",
-      "radiobutton4": "log",
-      "radiobutton5": "sqrt",
-      "radiobutton6": "pearson residuals",
-      "ok_button": "xxxxx"
-    },
-    "Dimentionality reduction": {
-      "radiobutton1": "PCA;UMAP;t-SNE",
-      "ok_button": "xxxxx"
-    },
-    "Clusterization": {
-      "radiobutton1": "leiden <- best",
-      "radiobutton2": "louvain",
-      "radiobutton3": "plot",
-      "radiobutton4": "plot by sample",
-        "ok_button": "xxxxx"
-    },
-    "Calculate marker": {
-      "radiobutton1": "sc.tl.rank_genes_groups",
-      "radiobutton2": "deseq2",
-      "radiobutton3": "plot importance",
-      "radiobutton4": "plot volcanos",
-      "radiobutton5": "plot dots",
-      "ok_button": "xxxxx"
-    },
-    "Enrichment": {
-      "radiobutton1": "go biological process",
-      "radiobutton2": "kegg",
-      "radiobutton3": "plot bars",
-    "ok_button": "xxxxx"
-    },
-    "Insert external markers": {
-      "radiobutton1": "load data",
-      "radiobutton3": "plot external markers",
-    "ok_button": "xxxxx"
-    },
-
-    "Trajectory": {
-        "ok_button": "xxxxx"
-    },
-    "Velocity": {
-        "ok_button": "xxxxx"
-    },
-    "GRN inference": {
-      "ok_button": "xxxxx"
-      }
-},
-
 
 
 "terminal": {
@@ -1505,41 +1332,6 @@
       "plaintext1": "text to be inserted in .bashrc",
       "ok_button": "clipboard_bashrc"
     }
-},
-
-"hardware": {
-
-    "os": {
-      "ok_button": "clipboard_os_info"
-    },
-    "cpu": {
-        "ok_button": "clipboard_cpu_info"
-    },
-   "gpu (nvidia)": {
-        "ok_button": "clipboard_gpu_info"
-    },
-    "ram": {
-      "ok_button": "clipboard_avalable_ram",
-      "plaintext1": "OBS: look at AVAILABLE. free is completely unused, but If you need more, cache will be dumped"
-    },
-    "storage": {
-      "ok_button": "clipboard_avalable_storage",
-      "plaintext1": "OBS: look for devices WITH FILESYSTEM. they can be mounted. (remember FAT32 has a 4G limit per file)"
-    },
-    "filesystems usage": {
-      "ok_button": "clipboard_filesystems_and_disk_space"
-    },
-    "largest disk ocupyers here": {
-      "radiobutton1": "folders sizes",
-      "radiobutton2": "5 largest files nested",
-      "ok_button": "clipboard_folders_and_disk_space"
-    }
-
-
-
-
-    
-
 },
 
 
