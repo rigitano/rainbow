@@ -570,13 +570,13 @@
 
 
     "box filled with the same molecule": {
-        "inputbox1": "file with molecule that will fill the box. ex: 'octn.pdb'",
-        "inputbox2": "forcefield. ex: 'charmm36-jul2022'",
+        "inputbox1": "molecule that will fill the box, represented as a list of gro and top files. ex: ['octn.gro', 'octn.itp']",
+        "inputbox2": "forcefield. ex: 'charmm36-jul2022' or 'martini3001' or 'marini22'",
         "inputbox3": "box size. ex: '5 5 5'",
         "inputbox4": "max number of particles. ex: 1000",
 
 
-        "ok_button": "clipboard_pdb2box_full_of_that"
+        "ok_button": "clipboard_molecule2box_full_of_that"
     },
 
 

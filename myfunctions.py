@@ -1208,11 +1208,11 @@ def clipboard_molecule2molecule_in_water_and_oil(molecule, s_oil_option, s_outSy
 
     return sent + " sent to clipboard"
 
-def clipboard_pdb2box_full_of_that(s_pdbfile, s_forceField, s_box_size, n_mol):
+def clipboard_molecule2box_full_of_that(s_pdbfile, s_forceField, s_box_size, n_mol):
     """This function sends a python function with arguments to the clipboard."""
     
     # Copy text to the clipboard
-    pyperclip.copy(f"cl.pdb2box_full_of_that({s_pdbfile}, {s_forceField}, {s_box_size}, {n_mol})")
+    pyperclip.copy(f"cl.molecule2box_full_of_that({s_pdbfile}, {s_forceField}, {s_box_size}, {n_mol})")
 
     # Retrieve text from the clipboard
     sent = pyperclip.paste()
