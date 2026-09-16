@@ -1221,6 +1221,43 @@ def clipboard_pdb2box_full_of_that(s_pdbfile, s_forceField, s_box_size, n_mol):
 
 
 
+def clipboard_build_membrane(s_system_name):
+    """Copy a build_membrane example to the clipboard."""
+
+    text = f"""
+lipid_domains = {{
+# domain_id   lipid   ratio_out  ratio_in  APL
+         0: [("POPC", 0.5,       0.5,      0.64),
+             ("POPE", 0.5,       0.5,      0.52)],
+         1: [("CHOL", 1,         1,        0.45)]
+}}
+
+floating_domains = [
+    {{"domain_id": 1, "radius": 8, "points": [200, 450]}}
+]
+
+shape_params = {{
+    "Box": (50, 50, 50),
+    "Thickness": 4,
+    "WallDensity": (1, 1),
+    "Radius": 20,
+}}
+
+cl.build_membrane(
+    out_system_name="{s_system_name}",
+    shape_type="Sphere",
+    shape_params=shape_params,
+    lipids_by_domain=lipid_domains,
+    floating_domains=floating_domains,
+)
+"""
+
+    pyperclip.copy(text)
+
+    return "Membrane build code sent to clipboard"
+
+
+
 def clipboard_pdb2gmx():
     """This function sends a python function with arguments to the clipboard."""
     

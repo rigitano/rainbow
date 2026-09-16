@@ -581,8 +581,10 @@
 
 
 
-    "sphere of lipids <NOT>": {
-        "ok_button": "xxxxx"
+    "sphere of lipids": {
+        "inputbox1": "name of the system without quotes. ex: sphere",
+
+        "ok_button": "clipboard_build_membrane"
     }
 
 
