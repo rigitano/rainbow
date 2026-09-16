@@ -1256,7 +1256,22 @@ cl.build_membrane(
 
     return "Membrane build code sent to clipboard"
 
+def clipboard_build_slab(s_system_name):
+    """Copy a build_membrane example to the clipboard."""
 
+    text = f"""
+cl.slab_in_water(
+    gro_in="box_full_of_ETOH.gro",
+    top_in="box_full_of_ETOH.top",
+    s_forceField="charmm36-jul2022",
+    layer_thickness=3.0,              
+    out_dir="{s_system_name}",
+)
+"""
+
+    pyperclip.copy(text)
+
+    return "Slab build code sent to clipboard"
 
 def clipboard_pdb2gmx():
     """This function sends a python function with arguments to the clipboard."""
