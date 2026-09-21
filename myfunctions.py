@@ -1233,7 +1233,7 @@ lipid_domains = {{
 }}
 
 floating_domains = [
-    {{"domain_id": 1, "radius": 8, "points": [200, 450]}}
+    {{"domain_id": 1, "radius": 5, "points": [200]}}
 ]
 
 shape_params = {{

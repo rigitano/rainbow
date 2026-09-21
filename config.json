@@ -584,13 +584,17 @@
     "sphere of lipids": {
         "inputbox1": "name of the system without quotes. ex: sphere",
 
-        "ok_button": "clipboard_build_membrane"
+        "ok_button": "clipboard_build_membrane",
+
+        "plaintext1": "OBS: there is a bug in insland placement. a small island appears in the oposite side"
+
     },
 
     "slab in water": {
         "inputbox1": "name of the system without quotes. ex: TG_slab_in_water",
 
         "ok_button": "clipboard_build_slab"
+
     }
 
 
